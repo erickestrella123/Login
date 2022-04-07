@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<!--Se Incluye el Script de Javascript-->
+	<head>
+		<meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+		<title>Registrador</title>
+
+		<script type="text/javascript">
+
+			function validar(){
+				var usuario= document.getElementById("usuario").value;
+				var password= document.getElementById("password").value;
+
+				if(usuario=="Erick" && password=="1234"){
+					alert("Bienvenidos");
+					document.write('<a href="contador.html" style="  text-decoration: none; color: #000; font-size: 30px; font-weight: bold;"> Contador </a> <br>');
+                    document.write('<a href="hora_fecha.html" style="  text-decoration: none; color: #000; font-size: 30px; font-weight: bold;"> <br> Fecha </a>');
+				}else{
+					alert("Salte de aquí");
+				}
+			}
+		</script>
+	</head>
+
+
+	<body>
+
+        <header> 
+            <a href="Index.html">Segundo Informatica Erick Estrella</a>
+        </header>
+
+        <h1> Iniciar Sesion </h1>
+
+		<input type="text" name="usuario" id="usuario" placeholder="Ingrese su Usuario">
+		<input type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+		<input type="button" name="verificar" id="verificar" onclick="validar()" value="Verficar">
+	</body>
+</html>
